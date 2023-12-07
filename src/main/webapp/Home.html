@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+	.navbar-nav{
+		gap: 10px;
+	}
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.nvb{
+		height: 100px;
+		padding: 20px;
+		background-color:cadetblue;
+	
+	}
+	.box{
+		width: 100vw;
+		height: 90vh;
+		background-image: url(payrol1.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	
+		
+	}
+	.header-txt{
+		text-align: center;
+		color:black;
+		position: relative;
+		top: 250px;
+		backdrop-filter:blur(3px);
+		font-family: sans-serif;
+		font-weight: 700;
+	}
+	.navbar-brand{
+		font-size: 1.5rem;
+	}
+</style>
+<body>
+	
+<nav class="navbar navbar-expand-lg nvb">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Payroll Management System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent row">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0  " style="margin-left: 650px;" >
+            
+           
+            
+          <li class="nav-item">
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                 Employee
+                </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="AddEmployee.html">Add Employee</a></li>
+              <li><a class="dropdown-item" href="Salary">Salary</a></li>
+              <li><a class="dropdown-item" href="displayEmp">View Employees</a></li>
+              <li><hr class="dropdown-divider"></li>
+   
+              </ul>
+           </div>
+          </li>
+            <li class="nav-item">
+                <div class="btn-group">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                 Update
+                </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="Update">Update Employee</a></li>
+              <li><a class="dropdown-item" href="UpdateSal">Update Salary</a></li>
+             
+   
+              </ul>
+           </div>
+            </li>
+            <li class="nav-item logout1" id="log">
+             <a href="paymentSleep" class="btn btn-primary">Generate Pay Sleep</a>
+            </li>
+          </ul>
+         
+        </div>
+      </div>
+    </nav>
+  <div class="box">
+	  <h2 class="header-txt">Welcome to Payroll Management <br>System</h2>
+  </div>
+  
+</body>
+</html>
